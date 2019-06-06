@@ -1,0 +1,79 @@
+﻿@model BikeInsurance.Models.tblUserData
+
+@{
+    /**/
+
+    ViewBag.Title = "Claim_Unclaim";
+}
+
+
+
+<link href="~/divnew.css" rel="stylesheet" />
+
+@{
+
+    if (@ViewBag.Message == "Yes")
+    {
+        <div>
+            <h1 style="color:red;text-align:center;font-family:'Courier New';font-size:60px;margin-top: 250px;margin-left: -80px;"><span style="color:black">Yes</span>,there is risk on claiming.</h1>
+        </div>
+    }
+    else
+    {
+        <div>
+            <h1 style="color:darkgreen;text-align:center;font-family:'Courier New';font-size:60px;margin-top: 250px;margin-left: -80px;">There is<span style="color:black"> no</span> risk on claiming.</h1>
+        </div>
+        }
+    }
+@*<html>
+
+    <style>
+        divbox {
+            background-color: white;
+            width: 300px;
+            border: 10px solid green;
+            padding: 50px;
+            margin: 25px;
+        }
+    </style>
+    </html>
+
+    @{
+
+            if (@ViewBag.Message == "a")
+            {
+            <h1 style="color:green;text-align:center;font-family:'Courier New';font-size:60px;"><span style="color:red">Risk =</span>----------</h1>
+            }
+            else if (@ViewBag.Message == "b")
+            {
+            <h1 style="color:blue;text-align:center;font-family:'Courier New';font-size:60px;"><span style="color:red">Risk =</span>----------</h1>
+
+
+            }
+            else if (@ViewBag.Message == "c")
+            {
+            <h1 style="color:yellow;text-align:center;font-family:'Courier New';font-size:60px;"><span style="color:red">Risk =</span>----------</h1>
+
+
+            }
+            else if (@ViewBag.Message == "d")
+            {
+            <h1 style="color:red;text-align:center;font-family:'Courier New';font-size:60px;"><span style="color:red">Risk =</span>----------</h1>
+
+
+            }
+
+
+            <box>
+                INDEX:<br />
+                High Risk<br /><h1 style="color:green;font-family:'Courier New';font-size:30px;">----------</h1>
+                Small Risk<br /><h1 style="color:blue;font-family:'Courier New';font-size:30px;">----------</h1>
+                Some Risk<br /><h1 style="color:yellow;font-family:'Courier New';font-size:30px;">----------</h1>
+                No Risk<br /><h1 style="color:red;font-family:'Courier New';font-size:30px;">----------</h1>
+            </box>*@
+
+
+    
+
+
+

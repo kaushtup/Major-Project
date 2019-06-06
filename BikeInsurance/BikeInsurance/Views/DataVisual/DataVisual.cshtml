@@ -1,0 +1,60 @@
+﻿ @{
+     ViewBag.Title = "DataVisual";
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: ""
+	},
+	toolTip: {
+		shared: true
+	},
+	axisY: {
+		title: "No. of Data"
+	},
+	legend: {
+		cursor: "pointer",
+		verticalAlign: "center",
+		horizontalAlign: "right",
+		itemclick: toggleDataSeries
+	},
+	data: [{
+		type: "stackedColumn",
+		name: "Claim",
+		showInLegend: "true",
+		dataPoints: @Html.Raw(ViewBag.DataPoints1)
+	},
+	{
+		type: "stackedColumn",
+		name: "Unclaim",
+		showInLegend: "true",
+		dataPoints: @Html.Raw(ViewBag.DataPoints2)
+	}]
+});
+chart.render();
+
+function toggleDataSeries(e) {
+	if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+		e.dataSeries.visible = false;
+	}
+	else {
+		e.dataSeries.visible = true;
+	}
+	chart.render();
+}
+
+}
+    </script>
+</head>
+<body>
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>      

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BikeInsuranceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblCCHP">
+    <Key>
+      <PropertyRef Name="CCHPId" />
+    </Key>
+    <Property Name="CCHPId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LT100_Claim" Type="int" Nullable="false" />
+    <Property Name="LT100_Unclaim" Type="int" Nullable="false" />
+    <Property Name="LT125_Claim" Type="int" Nullable="false" />
+    <Property Name="LT125_Unclaim" Type="int" Nullable="false" />
+    <Property Name="LT150_Claim" Type="int" Nullable="false" />
+    <Property Name="LT150_Unclaim" Type="int" Nullable="false" />
+    <Property Name="LT200_Claim" Type="int" Nullable="false" />
+    <Property Name="LT200_Unclaim" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblClaimData">
+    <Key>
+      <PropertyRef Name="DataId" />
+    </Key>
+    <Property Name="DataId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LotNo" Type="int" Nullable="false" />
+    <Property Name="YearManufacture" Type="int" Nullable="false" />
+    <Property Name="TypeCover" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CCHP" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCompanyName">
+    <Key>
+      <PropertyRef Name="CNid" />
+    </Key>
+    <Property Name="CNid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Yamaha_Claim" Type="int" Nullable="false" />
+    <Property Name="Yamaha_Unclaim" Type="int" Nullable="false" />
+    <Property Name="RoyalEnfield_Claim" Type="int" Nullable="false" />
+    <Property Name="RoyalEnfield_Unclaim" Type="int" Nullable="false" />
+    <Property Name="Honda_Claim" Type="int" Nullable="false" />
+    <Property Name="Honda_Unclaim" Type="int" Nullable="false" />
+    <Property Name="Hero_Claim" Type="int" Nullable="false" />
+    <Property Name="Hero_Unclaim" Type="int" Nullable="false" />
+    <Property Name="HeroHonda_Claim" Type="int" Nullable="false" />
+    <Property Name="HeroHonda_Unclaim" Type="int" Nullable="false" />
+    <Property Name="Bajaj_Claim" Type="int" Nullable="false" />
+    <Property Name="Bajaj_Unclaim" Type="int" Nullable="false" />
+    <Property Name="TVS_Claim" Type="int" Nullable="false" />
+    <Property Name="TVS_Unclaim" Type="int" Nullable="false" />
+    <Property Name="Suzuki_Claim" Type="int" Nullable="false" />
+    <Property Name="Suzuki_Unclaim" Type="int" Nullable="false" />
+    <Property Name="Mahindra_Claim" Type="int" Nullable="false" />
+    <Property Name="Mahinda_Unclaim" Type="int" Nullable="false" />
+    <Property Name="KTM_Claim" Type="int" Nullable="false" />
+    <Property Name="KTM_Unclaim" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblLoteNo">
+    <Key>
+      <PropertyRef Name="LotNoId" />
+    </Key>
+    <Property Name="LotNoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LT10_Claim" Type="int" Nullable="false" />
+    <Property Name="LT10_Unclaim" Type="int" Nullable="false" />
+    <Property Name="LT20_Claim" Type="int" Nullable="false" />
+    <Property Name="LT20_Unclaim" Type="int" Nullable="false" />
+    <Property Name="LT30_Claim" Type="int" Nullable="false" />
+    <Property Name="LT30_Unclaim" Type="int" Nullable="false" />
+    <Property Name="LT40_Claim" Type="int" Nullable="false" />
+    <Property Name="LT40_Unclaim" Type="int" Nullable="false" />
+    <Property Name="LT50_Claim" Type="int" Nullable="false" />
+    <Property Name="LT50_Unclaim" Type="int" Nullable="false" />
+    <Property Name="LT60_Claim" Type="int" Nullable="false" />
+    <Property Name="LT60_Unclaim" Type="int" Nullable="false" />
+    <Property Name="LT70_Claim" Type="int" Nullable="false" />
+    <Property Name="LT70_Unclaim" Type="int" Nullable="false" />
+    <Property Name="LT80_Claim" Type="int" Nullable="false" />
+    <Property Name="LT80_Unclaim" Type="int" Nullable="false" />
+    <Property Name="LT100_Claim" Type="int" Nullable="false" />
+    <Property Name="LT100_Unclaim" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTestingSet">
+    <Key>
+      <PropertyRef Name="DataId" />
+    </Key>
+    <Property Name="DataId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LotNo" Type="int" Nullable="false" />
+    <Property Name="YearManufacture" Type="int" Nullable="false" />
+    <Property Name="TypeCover" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CCHP" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Claim" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTrainingSet">
+    <Key>
+      <PropertyRef Name="DataId" />
+    </Key>
+    <Property Name="DataId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LotNo" Type="int" Nullable="false" />
+    <Property Name="YearManufacture" Type="int" Nullable="false" />
+    <Property Name="TypeCover" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CCHP" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Claim" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTypeCover">
+    <Key>
+      <PropertyRef Name="TCid" />
+    </Key>
+    <Property Name="TCid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CM_Claim" Type="int" Nullable="false" />
+    <Property Name="CM_Unclaim" Type="int" Nullable="false" />
+    <Property Name="TP_Claim" Type="int" Nullable="false" />
+    <Property Name="TP_Unclaim" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblUnclaimData">
+    <Key>
+      <PropertyRef Name="DataId" />
+    </Key>
+    <Property Name="DataId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LotNo" Type="int" Nullable="false" />
+    <Property Name="YearManufacture" Type="int" Nullable="false" />
+    <Property Name="TypeCover" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CCHP" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblUserData">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MiddleName" Type="nvarchar(max)" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DOB" Type="date" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="YearManufacture" Type="int" Nullable="false" />
+    <Property Name="CCHP" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="LoteNo" Type="int" Nullable="false" />
+    <Property Name="Zone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Result" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblYM">
+    <Key>
+      <PropertyRef Name="YMid" />
+    </Key>
+    <Property Name="YMid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LT2010_Claim" Type="int" Nullable="false" />
+    <Property Name="LT2010_Unclaim" Type="int" Nullable="false" />
+    <Property Name="LT2015_Claim" Type="int" Nullable="false" />
+    <Property Name="LT2015_Unclaim" Type="int" Nullable="false" />
+    <Property Name="LT2020_Claim" Type="int" Nullable="false" />
+    <Property Name="LT2020_Unclaim" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblZone">
+    <Key>
+      <PropertyRef Name="ZoneCountId" />
+    </Key>
+    <Property Name="ZoneCountId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ME_Claim" Type="int" Nullable="false" />
+    <Property Name="ME_Unclaim" Type="int" Nullable="false" />
+    <Property Name="KO_Claim" Type="int" Nullable="false" />
+    <Property Name="KO_Unclaim" Type="int" Nullable="false" />
+    <Property Name="SA_Claim" Type="int" Nullable="false" />
+    <Property Name="SA_Unclaim" Type="int" Nullable="false" />
+    <Property Name="JA_Claim" Type="int" Nullable="false" />
+    <Property Name="JA_Unclaim" Type="int" Nullable="false" />
+    <Property Name="BA_Claim" Type="int" Nullable="false" />
+    <Property Name="BA_Unclaim" Type="int" Nullable="false" />
+    <Property Name="NA_Claim" Type="int" Nullable="false" />
+    <Property Name="NA_Unclaim" Type="int" Nullable="false" />
+    <Property Name="GA_Claim" Type="int" Nullable="false" />
+    <Property Name="GA_Unclaim" Type="int" Nullable="false" />
+    <Property Name="LU_Claim" Type="int" Nullable="false" />
+    <Property Name="LU_Unclaim" Type="int" Nullable="false" />
+    <Property Name="DH_Claim" Type="int" Nullable="false" />
+    <Property Name="DH_Unclaim" Type="int" Nullable="false" />
+    <Property Name="RA_Claim" Type="int" Nullable="false" />
+    <Property Name="RA_Unclaim" Type="int" Nullable="false" />
+    <Property Name="BHE_Claim" Type="int" Nullable="false" />
+    <Property Name="BHE_Unclaim" Type="int" Nullable="false" />
+    <Property Name="KA_Claim" Type="int" Nullable="false" />
+    <Property Name="KA_Unclaim" Type="int" Nullable="false" />
+    <Property Name="SE_Claim" Type="int" Nullable="false" />
+    <Property Name="SE_Unclaim" Type="int" Nullable="false" />
+    <Property Name="MA_Claim" Type="int" Nullable="false" />
+    <Property Name="MA_Unclaim" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="BikeInsuranceModelStoreContainer">
+    <EntitySet Name="tblCCHP" EntityType="Self.tblCCHP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblClaimData" EntityType="Self.tblClaimData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCompanyName" EntityType="Self.tblCompanyName" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLoteNo" EntityType="Self.tblLoteNo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTestingSet" EntityType="Self.tblTestingSet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTrainingSet" EntityType="Self.tblTrainingSet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTypeCover" EntityType="Self.tblTypeCover" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUnclaimData" EntityType="Self.tblUnclaimData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUserData" EntityType="Self.tblUserData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblYM" EntityType="Self.tblYM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblZone" EntityType="Self.tblZone" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

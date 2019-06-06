@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectXModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ProjectX.dbo.tblCCHP' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblCCHP">
+    <Key>
+      <PropertyRef Name="CCHPId" />
+    </Key>
+    <Property Name="CCHPId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LT100_Claim" Type="int" />
+    <Property Name="LT100_Unclaim" Type="int" />
+    <Property Name="LT125_Claim" Type="int" />
+    <Property Name="LT125_Unclaim" Type="int" />
+    <Property Name="LT150_Claim" Type="int" />
+    <Property Name="LT150_Unclaim" Type="int" />
+    <Property Name="LT200_Claim" Type="int" />
+    <Property Name="LT200_Unclaim" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ProjectX.dbo.tblClaimData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblClaimData">
+    <Key>
+      <PropertyRef Name="DataId" />
+      <PropertyRef Name="Zone" />
+      <PropertyRef Name="LotNo" />
+      <PropertyRef Name="YearManufacture" />
+      <PropertyRef Name="TypeCover" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="CCHP" />
+    </Key>
+    <Property Name="DataId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LotNo" Type="int" Nullable="false" />
+    <Property Name="YearManufacture" Type="int" Nullable="false" />
+    <Property Name="TypeCover" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CCHP" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ProjectX.dbo.tblCompanyName' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblCompanyName">
+    <Key>
+      <PropertyRef Name="CNid" />
+    </Key>
+    <Property Name="CNid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Yamaha_Claim" Type="int" />
+    <Property Name="Yamaha_Unclaim" Type="int" />
+    <Property Name="RoyalEnfield_Claim" Type="int" />
+    <Property Name="RoyalEnfield_Unclaim" Type="int" />
+    <Property Name="Honda_Claim" Type="int" />
+    <Property Name="Honda_Unclaim" Type="int" />
+    <Property Name="Hero_Claim" Type="int" />
+    <Property Name="Hero_Unclaim" Type="int" />
+    <Property Name="HeroHonda_Claim" Type="int" />
+    <Property Name="HeroHonda_Unclaim" Type="int" />
+    <Property Name="Bajaj_Claim" Type="int" />
+    <Property Name="Bajaj_Unclaim" Type="int" />
+    <Property Name="TVS_Claim" Type="int" />
+    <Property Name="TVS_Unclaim" Type="int" />
+    <Property Name="Suzuki_Claim" Type="int" />
+    <Property Name="Suzuki_Unclaim" Type="int" />
+    <Property Name="Mahindra_Claim" Type="int" />
+    <Property Name="Mahinda_Unclaim" Type="int" />
+    <Property Name="KTM_Claim" Type="int" />
+    <Property Name="KTM_Unclaim" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ProjectX.dbo.tblLoteNo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblLoteNo">
+    <Key>
+      <PropertyRef Name="LotNoId" />
+    </Key>
+    <Property Name="LotNoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LT10_Claim" Type="int" />
+    <Property Name="LT10_Unclaim" Type="int" />
+    <Property Name="LT20_Claim" Type="int" />
+    <Property Name="LT20_Unclaim" Type="int" />
+    <Property Name="LT30_Claim" Type="int" />
+    <Property Name="LT30_Unclaim" Type="int" />
+    <Property Name="LT40_Claim" Type="int" />
+    <Property Name="LT40_Unclaim" Type="int" />
+    <Property Name="LT50_Claim" Type="int" />
+    <Property Name="LT50_Unclaim" Type="int" />
+    <Property Name="LT60_Claim" Type="int" />
+    <Property Name="LT60_Unclaim" Type="int" />
+    <Property Name="LT70_Claim" Type="int" />
+    <Property Name="LT70_Unclaim" Type="int" />
+    <Property Name="LT80_Claim" Type="int" />
+    <Property Name="LT80_Unclaim" Type="int" />
+    <Property Name="LT100_Claim" Type="int" />
+    <Property Name="LT100_Unclaim" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ProjectX.dbo.tblTestingSet' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblTestingSet">
+    <Key>
+      <PropertyRef Name="DataId" />
+      <PropertyRef Name="Zone" />
+      <PropertyRef Name="LotNo" />
+      <PropertyRef Name="YearManufacture" />
+      <PropertyRef Name="TypeCover" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="CCHP" />
+      <PropertyRef Name="Claim" />
+    </Key>
+    <Property Name="DataId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LotNo" Type="int" Nullable="false" />
+    <Property Name="YearManufacture" Type="int" Nullable="false" />
+    <Property Name="TypeCover" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CCHP" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Claim" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ProjectX.dbo.tblTrainingSet' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblTrainingSet">
+    <Key>
+      <PropertyRef Name="DataId" />
+      <PropertyRef Name="Zone" />
+      <PropertyRef Name="LotNo" />
+      <PropertyRef Name="YearManufacture" />
+      <PropertyRef Name="TypeCover" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="CCHP" />
+      <PropertyRef Name="Claim" />
+    </Key>
+    <Property Name="DataId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LotNo" Type="int" Nullable="false" />
+    <Property Name="YearManufacture" Type="int" Nullable="false" />
+    <Property Name="TypeCover" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CCHP" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Claim" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ProjectX.dbo.tblTypeCover' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblTypeCover">
+    <Key>
+      <PropertyRef Name="TCid" />
+    </Key>
+    <Property Name="TCid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CM_Claim" Type="int" />
+    <Property Name="CM_Unclaim" Type="int" />
+    <Property Name="TP_Claim" Type="int" />
+    <Property Name="TP_Unclaim" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ProjectX.dbo.tblUnclaimData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblUnclaimData">
+    <Key>
+      <PropertyRef Name="DataId" />
+      <PropertyRef Name="Zone" />
+      <PropertyRef Name="LotNo" />
+      <PropertyRef Name="YearManufacture" />
+      <PropertyRef Name="TypeCover" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="CCHP" />
+    </Key>
+    <Property Name="DataId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LotNo" Type="int" Nullable="false" />
+    <Property Name="YearManufacture" Type="int" Nullable="false" />
+    <Property Name="TypeCover" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CCHP" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ProjectX.dbo.tblUserData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblUserData">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="DOB" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="YearManufacture" />
+      <PropertyRef Name="CCHP" />
+      <PropertyRef Name="LoteNo" />
+      <PropertyRef Name="Zone" />
+      <PropertyRef Name="ClaimType" />
+      <PropertyRef Name="Result" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MiddleName" Type="nvarchar(max)" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DOB" Type="date" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="YearManufacture" Type="int" Nullable="false" />
+    <Property Name="CCHP" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="LoteNo" Type="int" Nullable="false" />
+    <Property Name="Zone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Result" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ProjectX.dbo.tblYM' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblYM">
+    <Key>
+      <PropertyRef Name="YMid" />
+    </Key>
+    <Property Name="YMid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LT2010_Claim" Type="int" />
+    <Property Name="LT2010_Unclaim" Type="int" />
+    <Property Name="LT2015_Claim" Type="int" />
+    <Property Name="LT2015_Unclaim" Type="int" />
+    <Property Name="LT2020_Claim" Type="int" />
+    <Property Name="LT2020_Unclaim" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ProjectX.dbo.tblZone' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblZone">
+    <Key>
+      <PropertyRef Name="ZoneCountId" />
+    </Key>
+    <Property Name="ZoneCountId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ME_Claim" Type="int" />
+    <Property Name="ME_Unclaim" Type="int" />
+    <Property Name="KO_Claim" Type="int" />
+    <Property Name="KO_Unclaim" Type="int" />
+    <Property Name="SA_Claim" Type="int" />
+    <Property Name="SA_Unclaim" Type="int" />
+    <Property Name="JA_Claim" Type="int" />
+    <Property Name="JA_Unclaim" Type="int" />
+    <Property Name="BA_Claim" Type="int" />
+    <Property Name="BA_Unclaim" Type="int" />
+    <Property Name="NA_Claim" Type="int" />
+    <Property Name="NA_Unclaim" Type="int" />
+    <Property Name="GA_Claim" Type="int" />
+    <Property Name="GA_Unclaim" Type="int" />
+    <Property Name="LU_Claim" Type="int" />
+    <Property Name="LU_Unclaim" Type="int" />
+    <Property Name="DH_Claim" Type="int" />
+    <Property Name="DH_Unclaim" Type="int" />
+    <Property Name="RA_Claim" Type="int" />
+    <Property Name="RA_Unclaim" Type="int" />
+    <Property Name="BHE_Claim" Type="int" />
+    <Property Name="BHE_Unclaim" Type="int" />
+    <Property Name="KA_Claim" Type="int" />
+    <Property Name="KA_Unclaim" Type="int" />
+    <Property Name="SE_Claim" Type="int" />
+    <Property Name="SE_Unclaim" Type="int" />
+    <Property Name="MA_Claim" Type="int" />
+    <Property Name="MA_Unclaim" Type="int" />
+  </EntityType>
+  <EntityContainer Name="ProjectXModelStoreContainer">
+    <EntitySet Name="tblCCHP" EntityType="Self.tblCCHP" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblCCHP].[CCHPId] AS [CCHPId], 
+    [tblCCHP].[LT100_Claim] AS [LT100_Claim], 
+    [tblCCHP].[LT100_Unclaim] AS [LT100_Unclaim], 
+    [tblCCHP].[LT125_Claim] AS [LT125_Claim], 
+    [tblCCHP].[LT125_Unclaim] AS [LT125_Unclaim], 
+    [tblCCHP].[LT150_Claim] AS [LT150_Claim], 
+    [tblCCHP].[LT150_Unclaim] AS [LT150_Unclaim], 
+    [tblCCHP].[LT200_Claim] AS [LT200_Claim], 
+    [tblCCHP].[LT200_Unclaim] AS [LT200_Unclaim]
+    FROM [dbo].[tblCCHP] AS [tblCCHP]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblClaimData" EntityType="Self.tblClaimData" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblClaimData].[DataId] AS [DataId], 
+    [tblClaimData].[Zone] AS [Zone], 
+    [tblClaimData].[LotNo] AS [LotNo], 
+    [tblClaimData].[YearManufacture] AS [YearManufacture], 
+    [tblClaimData].[TypeCover] AS [TypeCover], 
+    [tblClaimData].[CompanyName] AS [CompanyName], 
+    [tblClaimData].[CCHP] AS [CCHP]
+    FROM [dbo].[tblClaimData] AS [tblClaimData]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblCompanyName" EntityType="Self.tblCompanyName" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblCompanyName].[CNid] AS [CNid], 
+    [tblCompanyName].[Yamaha_Claim] AS [Yamaha_Claim], 
+    [tblCompanyName].[Yamaha_Unclaim] AS [Yamaha_Unclaim], 
+    [tblCompanyName].[RoyalEnfield_Claim] AS [RoyalEnfield_Claim], 
+    [tblCompanyName].[RoyalEnfield_Unclaim] AS [RoyalEnfield_Unclaim], 
+    [tblCompanyName].[Honda_Claim] AS [Honda_Claim], 
+    [tblCompanyName].[Honda_Unclaim] AS [Honda_Unclaim], 
+    [tblCompanyName].[Hero_Claim] AS [Hero_Claim], 
+    [tblCompanyName].[Hero_Unclaim] AS [Hero_Unclaim], 
+    [tblCompanyName].[HeroHonda_Claim] AS [HeroHonda_Claim], 
+    [tblCompanyName].[HeroHonda_Unclaim] AS [HeroHonda_Unclaim], 
+    [tblCompanyName].[Bajaj_Claim] AS [Bajaj_Claim], 
+    [tblCompanyName].[Bajaj_Unclaim] AS [Bajaj_Unclaim], 
+    [tblCompanyName].[TVS_Claim] AS [TVS_Claim], 
+    [tblCompanyName].[TVS_Unclaim] AS [TVS_Unclaim], 
+    [tblCompanyName].[Suzuki_Claim] AS [Suzuki_Claim], 
+    [tblCompanyName].[Suzuki_Unclaim] AS [Suzuki_Unclaim], 
+    [tblCompanyName].[Mahindra_Claim] AS [Mahindra_Claim], 
+    [tblCompanyName].[Mahinda_Unclaim] AS [Mahinda_Unclaim], 
+    [tblCompanyName].[KTM_Claim] AS [KTM_Claim], 
+    [tblCompanyName].[KTM_Unclaim] AS [KTM_Unclaim]
+    FROM [dbo].[tblCompanyName] AS [tblCompanyName]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblLoteNo" EntityType="Self.tblLoteNo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblLoteNo].[LotNoId] AS [LotNoId], 
+    [tblLoteNo].[LT10_Claim] AS [LT10_Claim], 
+    [tblLoteNo].[LT10_Unclaim] AS [LT10_Unclaim], 
+    [tblLoteNo].[LT20_Claim] AS [LT20_Claim], 
+    [tblLoteNo].[LT20_Unclaim] AS [LT20_Unclaim], 
+    [tblLoteNo].[LT30_Claim] AS [LT30_Claim], 
+    [tblLoteNo].[LT30_Unclaim] AS [LT30_Unclaim], 
+    [tblLoteNo].[LT40_Claim] AS [LT40_Claim], 
+    [tblLoteNo].[LT40_Unclaim] AS [LT40_Unclaim], 
+    [tblLoteNo].[LT50_Claim] AS [LT50_Claim], 
+    [tblLoteNo].[LT50_Unclaim] AS [LT50_Unclaim], 
+    [tblLoteNo].[LT60_Claim] AS [LT60_Claim], 
+    [tblLoteNo].[LT60_Unclaim] AS [LT60_Unclaim], 
+    [tblLoteNo].[LT70_Claim] AS [LT70_Claim], 
+    [tblLoteNo].[LT70_Unclaim] AS [LT70_Unclaim], 
+    [tblLoteNo].[LT80_Claim] AS [LT80_Claim], 
+    [tblLoteNo].[LT80_Unclaim] AS [LT80_Unclaim], 
+    [tblLoteNo].[LT100_Claim] AS [LT100_Claim], 
+    [tblLoteNo].[LT100_Unclaim] AS [LT100_Unclaim]
+    FROM [dbo].[tblLoteNo] AS [tblLoteNo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblTestingSet" EntityType="Self.tblTestingSet" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblTestingSet].[DataId] AS [DataId], 
+    [tblTestingSet].[Zone] AS [Zone], 
+    [tblTestingSet].[LotNo] AS [LotNo], 
+    [tblTestingSet].[YearManufacture] AS [YearManufacture], 
+    [tblTestingSet].[TypeCover] AS [TypeCover], 
+    [tblTestingSet].[CompanyName] AS [CompanyName], 
+    [tblTestingSet].[CCHP] AS [CCHP], 
+    [tblTestingSet].[Claim] AS [Claim]
+    FROM [dbo].[tblTestingSet] AS [tblTestingSet]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblTrainingSet" EntityType="Self.tblTrainingSet" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblTrainingSet].[DataId] AS [DataId], 
+    [tblTrainingSet].[Zone] AS [Zone], 
+    [tblTrainingSet].[LotNo] AS [LotNo], 
+    [tblTrainingSet].[YearManufacture] AS [YearManufacture], 
+    [tblTrainingSet].[TypeCover] AS [TypeCover], 
+    [tblTrainingSet].[CompanyName] AS [CompanyName], 
+    [tblTrainingSet].[CCHP] AS [CCHP], 
+    [tblTrainingSet].[Claim] AS [Claim]
+    FROM [dbo].[tblTrainingSet] AS [tblTrainingSet]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblTypeCover" EntityType="Self.tblTypeCover" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblTypeCover].[TCid] AS [TCid], 
+    [tblTypeCover].[CM_Claim] AS [CM_Claim], 
+    [tblTypeCover].[CM_Unclaim] AS [CM_Unclaim], 
+    [tblTypeCover].[TP_Claim] AS [TP_Claim], 
+    [tblTypeCover].[TP_Unclaim] AS [TP_Unclaim]
+    FROM [dbo].[tblTypeCover] AS [tblTypeCover]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblUnclaimData" EntityType="Self.tblUnclaimData" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblUnclaimData].[DataId] AS [DataId], 
+    [tblUnclaimData].[Zone] AS [Zone], 
+    [tblUnclaimData].[LotNo] AS [LotNo], 
+    [tblUnclaimData].[YearManufacture] AS [YearManufacture], 
+    [tblUnclaimData].[TypeCover] AS [TypeCover], 
+    [tblUnclaimData].[CompanyName] AS [CompanyName], 
+    [tblUnclaimData].[CCHP] AS [CCHP]
+    FROM [dbo].[tblUnclaimData] AS [tblUnclaimData]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblUserData" EntityType="Self.tblUserData" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblUserData].[UserId] AS [UserId], 
+    [tblUserData].[FirstName] AS [FirstName], 
+    [tblUserData].[MiddleName] AS [MiddleName], 
+    [tblUserData].[LastName] AS [LastName], 
+    [tblUserData].[DOB] AS [DOB], 
+    [tblUserData].[CompanyName] AS [CompanyName], 
+    [tblUserData].[YearManufacture] AS [YearManufacture], 
+    [tblUserData].[CCHP] AS [CCHP], 
+    [tblUserData].[LoteNo] AS [LoteNo], 
+    [tblUserData].[Zone] AS [Zone], 
+    [tblUserData].[ClaimType] AS [ClaimType], 
+    [tblUserData].[Result] AS [Result]
+    FROM [dbo].[tblUserData] AS [tblUserData]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblYM" EntityType="Self.tblYM" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblYM].[YMid] AS [YMid], 
+    [tblYM].[LT2010_Claim] AS [LT2010_Claim], 
+    [tblYM].[LT2010_Unclaim] AS [LT2010_Unclaim], 
+    [tblYM].[LT2015_Claim] AS [LT2015_Claim], 
+    [tblYM].[LT2015_Unclaim] AS [LT2015_Unclaim], 
+    [tblYM].[LT2020_Claim] AS [LT2020_Claim], 
+    [tblYM].[LT2020_Unclaim] AS [LT2020_Unclaim]
+    FROM [dbo].[tblYM] AS [tblYM]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblZone" EntityType="Self.tblZone" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblZone].[ZoneCountId] AS [ZoneCountId], 
+    [tblZone].[ME_Claim] AS [ME_Claim], 
+    [tblZone].[ME_Unclaim] AS [ME_Unclaim], 
+    [tblZone].[KO_Claim] AS [KO_Claim], 
+    [tblZone].[KO_Unclaim] AS [KO_Unclaim], 
+    [tblZone].[SA_Claim] AS [SA_Claim], 
+    [tblZone].[SA_Unclaim] AS [SA_Unclaim], 
+    [tblZone].[JA_Claim] AS [JA_Claim], 
+    [tblZone].[JA_Unclaim] AS [JA_Unclaim], 
+    [tblZone].[BA_Claim] AS [BA_Claim], 
+    [tblZone].[BA_Unclaim] AS [BA_Unclaim], 
+    [tblZone].[NA_Claim] AS [NA_Claim], 
+    [tblZone].[NA_Unclaim] AS [NA_Unclaim], 
+    [tblZone].[GA_Claim] AS [GA_Claim], 
+    [tblZone].[GA_Unclaim] AS [GA_Unclaim], 
+    [tblZone].[LU_Claim] AS [LU_Claim], 
+    [tblZone].[LU_Unclaim] AS [LU_Unclaim], 
+    [tblZone].[DH_Claim] AS [DH_Claim], 
+    [tblZone].[DH_Unclaim] AS [DH_Unclaim], 
+    [tblZone].[RA_Claim] AS [RA_Claim], 
+    [tblZone].[RA_Unclaim] AS [RA_Unclaim], 
+    [tblZone].[BHE_Claim] AS [BHE_Claim], 
+    [tblZone].[BHE_Unclaim] AS [BHE_Unclaim], 
+    [tblZone].[KA_Claim] AS [KA_Claim], 
+    [tblZone].[KA_Unclaim] AS [KA_Unclaim], 
+    [tblZone].[SE_Claim] AS [SE_Claim], 
+    [tblZone].[SE_Unclaim] AS [SE_Unclaim], 
+    [tblZone].[MA_Claim] AS [MA_Claim], 
+    [tblZone].[MA_Unclaim] AS [MA_Unclaim]
+    FROM [dbo].[tblZone] AS [tblZone]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

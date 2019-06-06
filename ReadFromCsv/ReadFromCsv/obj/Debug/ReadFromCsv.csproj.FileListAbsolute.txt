@@ -1,0 +1,81 @@
+C:\Users\DELL\source\repos\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.exe.config
+C:\Users\DELL\source\repos\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.exe
+C:\Users\DELL\source\repos\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.pdb
+C:\Users\DELL\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csprojResolveAssemblyReference.cache
+C:\Users\DELL\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.Form1.resources
+C:\Users\DELL\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.Properties.Resources.resources
+C:\Users\DELL\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csproj.GenerateResource.Cache
+C:\Users\DELL\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.exe
+C:\Users\DELL\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.pdb
+C:\Users\DELL\Desktop\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.exe.config
+C:\Users\DELL\Desktop\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.exe
+C:\Users\DELL\Desktop\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.pdb
+C:\Users\DELL\Desktop\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.Form1.resources
+C:\Users\DELL\Desktop\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.Properties.Resources.resources
+C:\Users\DELL\Desktop\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csproj.GenerateResource.Cache
+C:\Users\DELL\Desktop\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.exe
+C:\Users\DELL\Desktop\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.pdb
+C:\Users\DELL\Desktop\ReadFromCsv\ReadFromCsv\bin\Debug\CsvHelper.dll
+C:\Users\DELL\Desktop\ReadFromCsv\ReadFromCsv\bin\Debug\CsvHelper.xml
+C:\Users\DELL\Desktop\ReadFromCsv\ReadFromCsv\bin\Debug\BLL.dll
+C:\Users\DELL\Desktop\ReadFromCsv\ReadFromCsv\bin\Debug\BLL.pdb
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.Form1.resources
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.Properties.Resources.resources
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csproj.GenerateResource.Cache
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csproj.CoreCompileInputs.cache
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.exe
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.pdb
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.exe.config
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.exe
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.pdb
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\bin\Debug\BLL.dll
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\bin\Debug\CsvHelper.dll
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\bin\Debug\BLL.pdb
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\bin\Debug\CsvHelper.xml
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.TrainData.resources
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.TestData.resources
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.MainForm.resources
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.ConfusionMatrix.resources
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csprojAssemblyReference.cache
+C:\Users\roshi\source\repos\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csproj.CopyComplete
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.exe.config
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.exe
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.pdb
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\bin\Debug\BLL.dll
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\bin\Debug\CsvHelper.dll
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\bin\Debug\BLL.pdb
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\bin\Debug\CsvHelper.xml
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csprojAssemblyReference.cache
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.ConfusionMatrix.resources
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.Form1.resources
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.MainForm.resources
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.Properties.Resources.resources
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.TestData.resources
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.TrainData.resources
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csproj.GenerateResource.cache
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csproj.CoreCompileInputs.cache
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csproj.CopyComplete
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.exe
+C:\Users\Kaushtup Bista\Desktop\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.pdb
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.exe.config
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.exe
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\bin\Debug\ReadFromCsv.pdb
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\bin\Debug\BLL.dll
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\bin\Debug\CsvHelper.dll
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\bin\Debug\BLL.pdb
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\bin\Debug\CsvHelper.xml
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csprojAssemblyReference.cache
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.ConfusionMatrix.resources
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.Form1.resources
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.MainForm.resources
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.Properties.Resources.resources
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.TestData.resources
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.TrainData.resources
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csproj.GenerateResource.cache
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csproj.CoreCompileInputs.cache
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.csproj.CopyComplete
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.exe
+C:\Users\Kaushtup Bista\Desktop\Major Project\ReadFromCsnewest\ReadFromCsv\ReadFromCsv\obj\Debug\ReadFromCsv.pdb

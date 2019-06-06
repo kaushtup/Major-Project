@@ -1,0 +1,105 @@
+﻿@model IEnumerable<BikeInsurance.Models.tblUserData>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1 style="color:black;text-align:center;top:100%;left: 50%;margin-left: 330px;margin-top: 100px;width:400px;font-family:'Century Gothic';font-size:60px;">WELCOME TO BIKE INSURANCE ANALYTICS SYSTEM</h1>
+
+
+    
+
+@*<h2>Welcome to Bike Intelligence System!!</h2>*@
+
+@*<p>
+        @Html.ActionLink("Intelligence", "Create")
+    </p>*@
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearManufacture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CCHP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoteNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Zone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClaimType)
+        </th>*@
+@*<th>
+                @Html.DisplayNameFor(model => model.Result)
+            </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MiddleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YearManufacture)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CCHP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LoteNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Zone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClaimType)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Result)
+                </td>*@
+@*<td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+
+    </table>*@

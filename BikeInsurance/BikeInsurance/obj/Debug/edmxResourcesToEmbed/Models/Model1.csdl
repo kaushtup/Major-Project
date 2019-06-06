@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectXModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblCCHP">
+    <Key>
+      <PropertyRef Name="CCHPId" />
+    </Key>
+    <Property Name="CCHPId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LT100_Claim" Type="Int32" />
+    <Property Name="LT100_Unclaim" Type="Int32" />
+    <Property Name="LT125_Claim" Type="Int32" />
+    <Property Name="LT125_Unclaim" Type="Int32" />
+    <Property Name="LT150_Claim" Type="Int32" />
+    <Property Name="LT150_Unclaim" Type="Int32" />
+    <Property Name="LT200_Claim" Type="Int32" />
+    <Property Name="LT200_Unclaim" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblClaimData">
+    <Key>
+      <PropertyRef Name="DataId" />
+      <PropertyRef Name="Zone" />
+      <PropertyRef Name="LotNo" />
+      <PropertyRef Name="YearManufacture" />
+      <PropertyRef Name="TypeCover" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="CCHP" />
+    </Key>
+    <Property Name="DataId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Zone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LotNo" Type="Int32" Nullable="false" />
+    <Property Name="YearManufacture" Type="Int32" Nullable="false" />
+    <Property Name="TypeCover" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CCHP" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCompanyName">
+    <Key>
+      <PropertyRef Name="CNid" />
+    </Key>
+    <Property Name="CNid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Yamaha_Claim" Type="Int32" />
+    <Property Name="Yamaha_Unclaim" Type="Int32" />
+    <Property Name="RoyalEnfield_Claim" Type="Int32" />
+    <Property Name="RoyalEnfield_Unclaim" Type="Int32" />
+    <Property Name="Honda_Claim" Type="Int32" />
+    <Property Name="Honda_Unclaim" Type="Int32" />
+    <Property Name="Hero_Claim" Type="Int32" />
+    <Property Name="Hero_Unclaim" Type="Int32" />
+    <Property Name="HeroHonda_Claim" Type="Int32" />
+    <Property Name="HeroHonda_Unclaim" Type="Int32" />
+    <Property Name="Bajaj_Claim" Type="Int32" />
+    <Property Name="Bajaj_Unclaim" Type="Int32" />
+    <Property Name="TVS_Claim" Type="Int32" />
+    <Property Name="TVS_Unclaim" Type="Int32" />
+    <Property Name="Suzuki_Claim" Type="Int32" />
+    <Property Name="Suzuki_Unclaim" Type="Int32" />
+    <Property Name="Mahindra_Claim" Type="Int32" />
+    <Property Name="Mahinda_Unclaim" Type="Int32" />
+    <Property Name="KTM_Claim" Type="Int32" />
+    <Property Name="KTM_Unclaim" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblLoteNo">
+    <Key>
+      <PropertyRef Name="LotNoId" />
+    </Key>
+    <Property Name="LotNoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LT10_Claim" Type="Int32" />
+    <Property Name="LT10_Unclaim" Type="Int32" />
+    <Property Name="LT20_Claim" Type="Int32" />
+    <Property Name="LT20_Unclaim" Type="Int32" />
+    <Property Name="LT30_Claim" Type="Int32" />
+    <Property Name="LT30_Unclaim" Type="Int32" />
+    <Property Name="LT40_Claim" Type="Int32" />
+    <Property Name="LT40_Unclaim" Type="Int32" />
+    <Property Name="LT50_Claim" Type="Int32" />
+    <Property Name="LT50_Unclaim" Type="Int32" />
+    <Property Name="LT60_Claim" Type="Int32" />
+    <Property Name="LT60_Unclaim" Type="Int32" />
+    <Property Name="LT70_Claim" Type="Int32" />
+    <Property Name="LT70_Unclaim" Type="Int32" />
+    <Property Name="LT80_Claim" Type="Int32" />
+    <Property Name="LT80_Unclaim" Type="Int32" />
+    <Property Name="LT100_Claim" Type="Int32" />
+    <Property Name="LT100_Unclaim" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblTestingSet">
+    <Key>
+      <PropertyRef Name="DataId" />
+      <PropertyRef Name="Zone" />
+      <PropertyRef Name="LotNo" />
+      <PropertyRef Name="YearManufacture" />
+      <PropertyRef Name="TypeCover" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="CCHP" />
+      <PropertyRef Name="Claim" />
+    </Key>
+    <Property Name="DataId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Zone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LotNo" Type="Int32" Nullable="false" />
+    <Property Name="YearManufacture" Type="Int32" Nullable="false" />
+    <Property Name="TypeCover" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CCHP" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Claim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTrainingSet">
+    <Key>
+      <PropertyRef Name="DataId" />
+      <PropertyRef Name="Zone" />
+      <PropertyRef Name="LotNo" />
+      <PropertyRef Name="YearManufacture" />
+      <PropertyRef Name="TypeCover" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="CCHP" />
+      <PropertyRef Name="Claim" />
+    </Key>
+    <Property Name="DataId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Zone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LotNo" Type="Int32" Nullable="false" />
+    <Property Name="YearManufacture" Type="Int32" Nullable="false" />
+    <Property Name="TypeCover" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CCHP" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Claim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTypeCover">
+    <Key>
+      <PropertyRef Name="TCid" />
+    </Key>
+    <Property Name="TCid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CM_Claim" Type="Int32" />
+    <Property Name="CM_Unclaim" Type="Int32" />
+    <Property Name="TP_Claim" Type="Int32" />
+    <Property Name="TP_Unclaim" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblUnclaimData">
+    <Key>
+      <PropertyRef Name="DataId" />
+      <PropertyRef Name="Zone" />
+      <PropertyRef Name="LotNo" />
+      <PropertyRef Name="YearManufacture" />
+      <PropertyRef Name="TypeCover" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="CCHP" />
+    </Key>
+    <Property Name="DataId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Zone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LotNo" Type="Int32" Nullable="false" />
+    <Property Name="YearManufacture" Type="Int32" Nullable="false" />
+    <Property Name="TypeCover" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CCHP" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblUserData">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="DOB" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="YearManufacture" />
+      <PropertyRef Name="CCHP" />
+      <PropertyRef Name="LoteNo" />
+      <PropertyRef Name="Zone" />
+      <PropertyRef Name="ClaimType" />
+      <PropertyRef Name="Result" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DOB" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="YearManufacture" Type="Int32" Nullable="false" />
+    <Property Name="CCHP" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="LoteNo" Type="Int32" Nullable="false" />
+    <Property Name="Zone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Result" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblYM">
+    <Key>
+      <PropertyRef Name="YMid" />
+    </Key>
+    <Property Name="YMid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LT2010_Claim" Type="Int32" />
+    <Property Name="LT2010_Unclaim" Type="Int32" />
+    <Property Name="LT2015_Claim" Type="Int32" />
+    <Property Name="LT2015_Unclaim" Type="Int32" />
+    <Property Name="LT2020_Claim" Type="Int32" />
+    <Property Name="LT2020_Unclaim" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblZone">
+    <Key>
+      <PropertyRef Name="ZoneCountId" />
+    </Key>
+    <Property Name="ZoneCountId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ME_Claim" Type="Int32" />
+    <Property Name="ME_Unclaim" Type="Int32" />
+    <Property Name="KO_Claim" Type="Int32" />
+    <Property Name="KO_Unclaim" Type="Int32" />
+    <Property Name="SA_Claim" Type="Int32" />
+    <Property Name="SA_Unclaim" Type="Int32" />
+    <Property Name="JA_Claim" Type="Int32" />
+    <Property Name="JA_Unclaim" Type="Int32" />
+    <Property Name="BA_Claim" Type="Int32" />
+    <Property Name="BA_Unclaim" Type="Int32" />
+    <Property Name="NA_Claim" Type="Int32" />
+    <Property Name="NA_Unclaim" Type="Int32" />
+    <Property Name="GA_Claim" Type="Int32" />
+    <Property Name="GA_Unclaim" Type="Int32" />
+    <Property Name="LU_Claim" Type="Int32" />
+    <Property Name="LU_Unclaim" Type="Int32" />
+    <Property Name="DH_Claim" Type="Int32" />
+    <Property Name="DH_Unclaim" Type="Int32" />
+    <Property Name="RA_Claim" Type="Int32" />
+    <Property Name="RA_Unclaim" Type="Int32" />
+    <Property Name="BHE_Claim" Type="Int32" />
+    <Property Name="BHE_Unclaim" Type="Int32" />
+    <Property Name="KA_Claim" Type="Int32" />
+    <Property Name="KA_Unclaim" Type="Int32" />
+    <Property Name="SE_Claim" Type="Int32" />
+    <Property Name="SE_Unclaim" Type="Int32" />
+    <Property Name="MA_Claim" Type="Int32" />
+    <Property Name="MA_Unclaim" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="ProjectXEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblCCHPs" EntityType="Self.tblCCHP" />
+    <EntitySet Name="tblClaimDatas" EntityType="Self.tblClaimData" />
+    <EntitySet Name="tblCompanyNames" EntityType="Self.tblCompanyName" />
+    <EntitySet Name="tblLoteNoes" EntityType="Self.tblLoteNo" />
+    <EntitySet Name="tblTestingSets" EntityType="Self.tblTestingSet" />
+    <EntitySet Name="tblTrainingSets" EntityType="Self.tblTrainingSet" />
+    <EntitySet Name="tblTypeCovers" EntityType="Self.tblTypeCover" />
+    <EntitySet Name="tblUnclaimDatas" EntityType="Self.tblUnclaimData" />
+    <EntitySet Name="tblUserDatas" EntityType="Self.tblUserData" />
+    <EntitySet Name="tblYMs" EntityType="Self.tblYM" />
+    <EntitySet Name="tblZones" EntityType="Self.tblZone" />
+  </EntityContainer>
+</Schema>

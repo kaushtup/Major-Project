@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjectXModelStoreContainer" CdmEntityContainer="ProjectXEntities3">
+    <EntitySetMapping Name="tblCCHPs">
+      <EntityTypeMapping TypeName="ProjectXModel.tblCCHP">
+        <MappingFragment StoreEntitySet="tblCCHP">
+          <ScalarProperty Name="CCHPId" ColumnName="CCHPId" />
+          <ScalarProperty Name="LT100_Claim" ColumnName="LT100_Claim" />
+          <ScalarProperty Name="LT100_Unclaim" ColumnName="LT100_Unclaim" />
+          <ScalarProperty Name="LT125_Claim" ColumnName="LT125_Claim" />
+          <ScalarProperty Name="LT125_Unclaim" ColumnName="LT125_Unclaim" />
+          <ScalarProperty Name="LT150_Claim" ColumnName="LT150_Claim" />
+          <ScalarProperty Name="LT150_Unclaim" ColumnName="LT150_Unclaim" />
+          <ScalarProperty Name="LT200_Claim" ColumnName="LT200_Claim" />
+          <ScalarProperty Name="LT200_Unclaim" ColumnName="LT200_Unclaim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblClaimDatas">
+      <EntityTypeMapping TypeName="ProjectXModel.tblClaimData">
+        <MappingFragment StoreEntitySet="tblClaimData">
+          <ScalarProperty Name="DataId" ColumnName="DataId" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="LotNo" ColumnName="LotNo" />
+          <ScalarProperty Name="YearManufacture" ColumnName="YearManufacture" />
+          <ScalarProperty Name="TypeCover" ColumnName="TypeCover" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CCHP" ColumnName="CCHP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCompanyNames">
+      <EntityTypeMapping TypeName="ProjectXModel.tblCompanyName">
+        <MappingFragment StoreEntitySet="tblCompanyName">
+          <ScalarProperty Name="CNid" ColumnName="CNid" />
+          <ScalarProperty Name="Yamaha_Claim" ColumnName="Yamaha_Claim" />
+          <ScalarProperty Name="Yamaha_Unclaim" ColumnName="Yamaha_Unclaim" />
+          <ScalarProperty Name="RoyalEnfield_Claim" ColumnName="RoyalEnfield_Claim" />
+          <ScalarProperty Name="RoyalEnfield_Unclaim" ColumnName="RoyalEnfield_Unclaim" />
+          <ScalarProperty Name="Honda_Claim" ColumnName="Honda_Claim" />
+          <ScalarProperty Name="Honda_Unclaim" ColumnName="Honda_Unclaim" />
+          <ScalarProperty Name="Hero_Claim" ColumnName="Hero_Claim" />
+          <ScalarProperty Name="Hero_Unclaim" ColumnName="Hero_Unclaim" />
+          <ScalarProperty Name="HeroHonda_Claim" ColumnName="HeroHonda_Claim" />
+          <ScalarProperty Name="HeroHonda_Unclaim" ColumnName="HeroHonda_Unclaim" />
+          <ScalarProperty Name="Bajaj_Claim" ColumnName="Bajaj_Claim" />
+          <ScalarProperty Name="Bajaj_Unclaim" ColumnName="Bajaj_Unclaim" />
+          <ScalarProperty Name="TVS_Claim" ColumnName="TVS_Claim" />
+          <ScalarProperty Name="TVS_Unclaim" ColumnName="TVS_Unclaim" />
+          <ScalarProperty Name="Suzuki_Claim" ColumnName="Suzuki_Claim" />
+          <ScalarProperty Name="Suzuki_Unclaim" ColumnName="Suzuki_Unclaim" />
+          <ScalarProperty Name="Mahindra_Claim" ColumnName="Mahindra_Claim" />
+          <ScalarProperty Name="Mahinda_Unclaim" ColumnName="Mahinda_Unclaim" />
+          <ScalarProperty Name="KTM_Claim" ColumnName="KTM_Claim" />
+          <ScalarProperty Name="KTM_Unclaim" ColumnName="KTM_Unclaim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLoteNoes">
+      <EntityTypeMapping TypeName="ProjectXModel.tblLoteNo">
+        <MappingFragment StoreEntitySet="tblLoteNo">
+          <ScalarProperty Name="LotNoId" ColumnName="LotNoId" />
+          <ScalarProperty Name="LT10_Claim" ColumnName="LT10_Claim" />
+          <ScalarProperty Name="LT10_Unclaim" ColumnName="LT10_Unclaim" />
+          <ScalarProperty Name="LT20_Claim" ColumnName="LT20_Claim" />
+          <ScalarProperty Name="LT20_Unclaim" ColumnName="LT20_Unclaim" />
+          <ScalarProperty Name="LT30_Claim" ColumnName="LT30_Claim" />
+          <ScalarProperty Name="LT30_Unclaim" ColumnName="LT30_Unclaim" />
+          <ScalarProperty Name="LT40_Claim" ColumnName="LT40_Claim" />
+          <ScalarProperty Name="LT40_Unclaim" ColumnName="LT40_Unclaim" />
+          <ScalarProperty Name="LT50_Claim" ColumnName="LT50_Claim" />
+          <ScalarProperty Name="LT50_Unclaim" ColumnName="LT50_Unclaim" />
+          <ScalarProperty Name="LT60_Claim" ColumnName="LT60_Claim" />
+          <ScalarProperty Name="LT60_Unclaim" ColumnName="LT60_Unclaim" />
+          <ScalarProperty Name="LT70_Claim" ColumnName="LT70_Claim" />
+          <ScalarProperty Name="LT70_Unclaim" ColumnName="LT70_Unclaim" />
+          <ScalarProperty Name="LT80_Claim" ColumnName="LT80_Claim" />
+          <ScalarProperty Name="LT80_Unclaim" ColumnName="LT80_Unclaim" />
+          <ScalarProperty Name="LT100_Claim" ColumnName="LT100_Claim" />
+          <ScalarProperty Name="LT100_Unclaim" ColumnName="LT100_Unclaim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTestingSets">
+      <EntityTypeMapping TypeName="ProjectXModel.tblTestingSet">
+        <MappingFragment StoreEntitySet="tblTestingSet">
+          <ScalarProperty Name="DataId" ColumnName="DataId" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="LotNo" ColumnName="LotNo" />
+          <ScalarProperty Name="YearManufacture" ColumnName="YearManufacture" />
+          <ScalarProperty Name="TypeCover" ColumnName="TypeCover" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CCHP" ColumnName="CCHP" />
+          <ScalarProperty Name="Claim" ColumnName="Claim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTrainingSets">
+      <EntityTypeMapping TypeName="ProjectXModel.tblTrainingSet">
+        <MappingFragment StoreEntitySet="tblTrainingSet">
+          <ScalarProperty Name="DataId" ColumnName="DataId" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="LotNo" ColumnName="LotNo" />
+          <ScalarProperty Name="YearManufacture" ColumnName="YearManufacture" />
+          <ScalarProperty Name="TypeCover" ColumnName="TypeCover" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CCHP" ColumnName="CCHP" />
+          <ScalarProperty Name="Claim" ColumnName="Claim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTypeCovers">
+      <EntityTypeMapping TypeName="ProjectXModel.tblTypeCover">
+        <MappingFragment StoreEntitySet="tblTypeCover">
+          <ScalarProperty Name="TCid" ColumnName="TCid" />
+          <ScalarProperty Name="CM_Claim" ColumnName="CM_Claim" />
+          <ScalarProperty Name="CM_Unclaim" ColumnName="CM_Unclaim" />
+          <ScalarProperty Name="TP_Claim" ColumnName="TP_Claim" />
+          <ScalarProperty Name="TP_Unclaim" ColumnName="TP_Unclaim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUnclaimDatas">
+      <EntityTypeMapping TypeName="ProjectXModel.tblUnclaimData">
+        <MappingFragment StoreEntitySet="tblUnclaimData">
+          <ScalarProperty Name="DataId" ColumnName="DataId" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="LotNo" ColumnName="LotNo" />
+          <ScalarProperty Name="YearManufacture" ColumnName="YearManufacture" />
+          <ScalarProperty Name="TypeCover" ColumnName="TypeCover" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CCHP" ColumnName="CCHP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserDatas">
+      <EntityTypeMapping TypeName="ProjectXModel.tblUserData">
+        <MappingFragment StoreEntitySet="tblUserData">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="YearManufacture" ColumnName="YearManufacture" />
+          <ScalarProperty Name="CCHP" ColumnName="CCHP" />
+          <ScalarProperty Name="LoteNo" ColumnName="LoteNo" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblYMs">
+      <EntityTypeMapping TypeName="ProjectXModel.tblYM">
+        <MappingFragment StoreEntitySet="tblYM">
+          <ScalarProperty Name="YMid" ColumnName="YMid" />
+          <ScalarProperty Name="LT2010_Claim" ColumnName="LT2010_Claim" />
+          <ScalarProperty Name="LT2010_Unclaim" ColumnName="LT2010_Unclaim" />
+          <ScalarProperty Name="LT2015_Claim" ColumnName="LT2015_Claim" />
+          <ScalarProperty Name="LT2015_Unclaim" ColumnName="LT2015_Unclaim" />
+          <ScalarProperty Name="LT2020_Claim" ColumnName="LT2020_Claim" />
+          <ScalarProperty Name="LT2020_Unclaim" ColumnName="LT2020_Unclaim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblZones">
+      <EntityTypeMapping TypeName="ProjectXModel.tblZone">
+        <MappingFragment StoreEntitySet="tblZone">
+          <ScalarProperty Name="ZoneCountId" ColumnName="ZoneCountId" />
+          <ScalarProperty Name="ME_Claim" ColumnName="ME_Claim" />
+          <ScalarProperty Name="ME_Unclaim" ColumnName="ME_Unclaim" />
+          <ScalarProperty Name="KO_Claim" ColumnName="KO_Claim" />
+          <ScalarProperty Name="KO_Unclaim" ColumnName="KO_Unclaim" />
+          <ScalarProperty Name="SA_Claim" ColumnName="SA_Claim" />
+          <ScalarProperty Name="SA_Unclaim" ColumnName="SA_Unclaim" />
+          <ScalarProperty Name="JA_Claim" ColumnName="JA_Claim" />
+          <ScalarProperty Name="JA_Unclaim" ColumnName="JA_Unclaim" />
+          <ScalarProperty Name="BA_Claim" ColumnName="BA_Claim" />
+          <ScalarProperty Name="BA_Unclaim" ColumnName="BA_Unclaim" />
+          <ScalarProperty Name="NA_Claim" ColumnName="NA_Claim" />
+          <ScalarProperty Name="NA_Unclaim" ColumnName="NA_Unclaim" />
+          <ScalarProperty Name="GA_Claim" ColumnName="GA_Claim" />
+          <ScalarProperty Name="GA_Unclaim" ColumnName="GA_Unclaim" />
+          <ScalarProperty Name="LU_Claim" ColumnName="LU_Claim" />
+          <ScalarProperty Name="LU_Unclaim" ColumnName="LU_Unclaim" />
+          <ScalarProperty Name="DH_Claim" ColumnName="DH_Claim" />
+          <ScalarProperty Name="DH_Unclaim" ColumnName="DH_Unclaim" />
+          <ScalarProperty Name="RA_Claim" ColumnName="RA_Claim" />
+          <ScalarProperty Name="RA_Unclaim" ColumnName="RA_Unclaim" />
+          <ScalarProperty Name="BHE_Claim" ColumnName="BHE_Claim" />
+          <ScalarProperty Name="BHE_Unclaim" ColumnName="BHE_Unclaim" />
+          <ScalarProperty Name="KA_Claim" ColumnName="KA_Claim" />
+          <ScalarProperty Name="KA_Unclaim" ColumnName="KA_Unclaim" />
+          <ScalarProperty Name="SE_Claim" ColumnName="SE_Claim" />
+          <ScalarProperty Name="SE_Unclaim" ColumnName="SE_Unclaim" />
+          <ScalarProperty Name="MA_Claim" ColumnName="MA_Claim" />
+          <ScalarProperty Name="MA_Unclaim" ColumnName="MA_Unclaim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeInsurance", "BikeInsurance\BikeInsurance.csproj", "{337A47A4-C693-49A9-A286-4506C25B64A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeInsurance.Tests", "BikeInsurance.Tests\BikeInsurance.Tests.csproj", "{ADA14923-C24F-48A8-90DB-9CAD695B870F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{337A47A4-C693-49A9-A286-4506C25B64A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{337A47A4-C693-49A9-A286-4506C25B64A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{337A47A4-C693-49A9-A286-4506C25B64A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{337A47A4-C693-49A9-A286-4506C25B64A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADA14923-C24F-48A8-90DB-9CAD695B870F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA14923-C24F-48A8-90DB-9CAD695B870F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA14923-C24F-48A8-90DB-9CAD695B870F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA14923-C24F-48A8-90DB-9CAD695B870F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D70B45BD-FB15-4855-A680-177D9AB62B8B}
+	EndGlobalSection
+EndGlobal
